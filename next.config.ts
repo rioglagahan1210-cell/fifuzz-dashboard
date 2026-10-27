@@ -1,7 +1,10 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
+  /* Konfigurasi keamanan untuk akses dev dari IP jaringan lokal */
+  allowedDevOrigins: ["192.168.1.9", "localhost"],
+
+  /* Konfigurasi bawaan Anda sebelumnya */
   experimental: {
     agentFeedback: true,
   },
